@@ -12,6 +12,21 @@
   </parent>
   <name>petclinic</name>
 
+<!-- Designating remote repo to upload to (in this case nexus) -->
+  <distributionManagement>
+    <repository>
+      <id>DOB</id>
+      <name>DOB-release</name>
+      <url>http://172.16.197.147:8081/repository/DOB-release/</url>
+    </repository>
+    <snapshotRepository>
+      <id>DOB</id>
+      <name>DOB-snapshot</name>
+      <url>http://172.16.197.147:8081/repository/DOB-snapshot/</url>
+    </snapshotRepository>    
+  </distributionManagement>
+  
+
   <properties>
 
     <!-- Generic properties -->
