@@ -14,11 +14,11 @@
 
 <!-- Designating remote repo to upload to (in this case nexus) -->
   <distributionManagement>
-    <repository>
+<!--     <repository>
       <id>DOB</id>
       <name>DOB-release</name>
       <url>http://localhost:8081/repository/DOB-release/</url>
-    </repository>
+    </repository> -->
     <snapshotRepository>
       <id>DOB</id>
       <name>DOB-snapshot</name>
