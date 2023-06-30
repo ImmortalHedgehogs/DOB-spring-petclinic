@@ -17,12 +17,12 @@
     <repository>
       <id>DOB</id>
       <name>DOB-release</name>
-      <url>http://192.168.0.39:8081/repository/DOB-release/</url>
+      <url>http://localhost:8081/repository/DOB-release/</url>
     </repository>
     <snapshotRepository>
       <id>DOB</id>
       <name>DOB-snapshot</name>
-      <url>http://192.168.0.39:8081/repository/DOB-snapshot/</url>
+      <url>http://localhost:8081/repository/DOB-snapshot/</url>
     </snapshotRepository>    
   </distributionManagement>
   
