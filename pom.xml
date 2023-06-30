@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.springframework.samples</groupId>
   <artifactId>spring-petclinic</artifactId>
-  <version>3.6.0-SNAPSHOT</version>
+  <version>3.8.0-SNAPSHOT</version>
 
   <parent>
     <groupId>org.springframework.boot</groupId>
@@ -22,7 +22,7 @@
     <snapshotRepository>
       <id>DOB</id>
       <name>DOB-snapshot</name>
-      <url>http://10.96.147.14:8081/repository/DOB-snapshot/</url>
+      <url>http://localhost:30003/repository/DOB-snapshot/</url>
     </snapshotRepository>    
   </distributionManagement>
   
