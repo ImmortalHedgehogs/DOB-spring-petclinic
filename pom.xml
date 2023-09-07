@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.springframework.samples</groupId>
   <artifactId>spring-petclinic</artifactId>
-  <version>3.8.0-SNAPSHOT</version>
+  <version>3.8.1</version>
 
   <parent>
     <groupId>org.springframework.boot</groupId>
@@ -14,15 +14,15 @@
 
 <!-- Designating remote repo to upload to (in this case nexus) -->
   <distributionManagement>
-<!--     <repository>
+    <repository>
       <id>DOB</id>
       <name>DOB-release</name>
-      <url>http://localhost:8081/repository/DOB-release/</url>
-    </repository> -->
+      <url>https://b218-2603-3006-9-1200-9093-1f72-de14-52cf.ngrok-free.app/repository/DOB-release/</url>
+    </repository>
     <snapshotRepository>
       <id>DOB</id>
       <name>DOB-snapshot</name>
-      <url>http://bootcamp-service:8081/repository/DOB-snapshot/</url>
+      <url>https://b218-2603-3006-9-1200-9093-1f72-de14-52cf.ngrok-free.app/repository/DOB-snapshot/</url>
     </snapshotRepository>    
   </distributionManagement>
   
@@ -132,6 +132,14 @@
       <groupId>jakarta.xml.bind</groupId>
       <artifactId>jakarta.xml.bind-api</artifactId>
     </dependency>
+
+    <!-- https://mvnrepository.com/artifact/joda-time/joda-time -->
+    <dependency>
+        <groupId>joda-time</groupId>
+        <artifactId>joda-time</artifactId>
+        <version>2.12.7</version>
+    </dependency>
+
 
   </dependencies>
 
@@ -270,6 +278,13 @@
   </licenses>
 
   <repositories>
+    <repository>
+      <id>DOB-release</id>
+      <url>https://b218-2603-3006-9-1200-9093-1f72-de14-52cf.ngrok-free.app/repository/DOB-release/</url>
+      <snapshots> 
+        <enabled> false </enabled>
+      </snapshots>
+    </repository>
     <repository>
       <id>spring-snapshots</id>
       <name>Spring Snapshots</name>
